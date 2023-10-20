@@ -61,8 +61,8 @@ abstract class TypeBuilder
             $str .= $string . ',';
         } elseif (is_bool($string)) {
             $str .= $string ? 'true,' : 'false,';
-        } elseif (ctype_upper($string)) {
-            $str .= $string . ',';
+//        } elseif (ctype_upper($string)) {
+//            $str .= $string . ',';
         } else {
             $str .= '"' . $string .'",';
         }
